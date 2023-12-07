@@ -1,11 +1,6 @@
 import Vue from 'vue';
+import App from './pages/products';
 
 new Vue({
-    el: '#app',
-    data() {
-        return {
-            firstname: 'Yoann',
-        };
-    },
-    template: '<h1>Hello {{ firstname }} !</h1>',
-});
+    render: (h) => h(App),
+}).$mount('#app');
